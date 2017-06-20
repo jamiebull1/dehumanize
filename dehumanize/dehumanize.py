@@ -32,7 +32,6 @@ def get_first(pattern, text):
     """Return either a matched number or 0."""
     matches = re.findall(pattern, text)
     if matches:
-        print(matches[0], pattern.split()[-1])
         return int(matches[0])
     else:
         return 0
